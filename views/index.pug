@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(
+    class = ['test','test1']
+
+    )
+    | testing this
+    | <br>
+    | teesting 2
+    div(
+      class=['divunder']
+      )
+      |testing2
+  div.divunder
+      | under div test
