@@ -4,12 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
-var io = require('socket.io');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var http = require('http').Server(express);
+var io = require("socket.io")(http);
 
 
 // view engine setup
@@ -27,6 +29,7 @@ app.use(sassMiddleware({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -47,7 +50,12 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
 
 
 
 module.exports = app;
+
+http.listen('localhost',3001);

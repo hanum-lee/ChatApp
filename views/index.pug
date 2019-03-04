@@ -4,15 +4,18 @@ block content
   h1= title
   p Welcome to #{title}
   div(
-    class = ['test','test1']
-
+    class = ['container','test1']
     )
-    | testing this
-    | <br>
-    | teesting 2
-    div(
-      class=['divunder']
+    div.row
+      div(
+      id=['currentuser']
       )
-      |testing2
-  div.divunder
-      | under div test
+        | Current User
+      div(
+      id=['userlist']
+      )
+        | User List
+    div.row
+
+    script.
+      var socket = io();
