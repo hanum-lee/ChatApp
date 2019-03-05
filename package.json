@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "node-sass-middleware": "^0.11.0",
     "socket.io": "^2.2.0"
   }
 }

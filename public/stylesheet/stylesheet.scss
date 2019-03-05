@@ -1,0 +1,56 @@
+body{
+  font-size: 2em;
+  border-style: solid;
+  border-width: 2px;
+  margin:10px;
+}
+
+
+div{
+  display: inline-block;
+}
+
+.container{
+  margin:auto;
+}
+.row{
+  min-width:70%;
+}
+.label{
+  margin-left:20px;
+}
+
+.box{
+  min-height: 500px;
+}
+.dynamicbox{
+  background-color: darkgrey;
+}
+
+#CurrentUserLabel{
+
+}
+#UserNameLabel{
+
+}
+
+#Chatbox{
+  margin-right: 20px;
+  margin-left:10px;
+  width:60%;
+}
+
+#UserList{
+  width:20%;
+  margin-left:20px;
+}
+
+form{
+  display:inline-block;
+}
+
+#message{
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
