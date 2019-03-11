@@ -1,16 +1,12 @@
-body{
-  font-size: 1.6em;
-
-  margin:10px;
-}
-
 
 div{
   display: inline-block;
 }
 
 .container{
-  margin:auto;
+  font-size: 1.6em;
+  margin-left: 20px;
+  margin-top:10px;
   border-style: solid;
   border-width: 2px;
 }
@@ -31,20 +27,20 @@ div{
 #CurrentUserLabel{
 
 }
-#UserNameLabel{
 
+#UserNameLabel{
+  font-weight: bold;
 }
+
 
 #Chatbox{
   margin-right: 20px;
   margin-left:10px;
-  width:60%;
   overflow: -moz-scrollbars-none;
   position:relative;
 }
 
 #UserList{
-  width:20%;
   margin-left:20px;
 }
 
@@ -56,11 +52,12 @@ form{
   width:100%;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 0px;
+  padding: 0;
 
 }
 #currentUser{
   list-style: none;
+  padding:0;
 }
 
 #messages{
@@ -69,5 +66,7 @@ form{
   overflow: auto;
   position: absolute;
   bottom:0;
-  max-height: 400px;
+  max-height:480px;
+  width:100%;
+  margin-bottom: 5px;
 }
