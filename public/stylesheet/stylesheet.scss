@@ -39,6 +39,8 @@ div{
   margin-right: 20px;
   margin-left:10px;
   width:60%;
+  overflow: -moz-scrollbars-none;
+  position:relative;
 }
 
 #UserList{
@@ -55,9 +57,17 @@ form{
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 0px;
+
+}
+#currentUser{
+  list-style: none;
 }
 
 #messages{
   list-style: none;
   padding:5px;
+  overflow: auto;
+  position: absolute;
+  bottom:0;
+  max-height: 400px;
 }
